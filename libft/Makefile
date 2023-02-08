@@ -6,7 +6,7 @@
 #    By: csenand <csenand@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/18 15:11:55 by csenand           #+#    #+#              #
-#    Updated: 2022/11/10 14:35:28 by csenand          ###   ########.fr        #
+#    Updated: 2023/02/08 10:47:37 by csenand          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,8 +34,8 @@ CC			=	gcc
 CFLAGS		=	-Wall -Wextra -Werror -I.
 NAME		=	libft.a
 
-SRC			= 	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
-				ft_isascii.c ft_isdigit.c ft_isprint.c ft_itoa.c \
+SRC			= 	ft_atof.c ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c \
+				ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_itoa.c \
 				ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c \
 				ft_putchar_fd.c ft_putstr_fd.c ft_split.c ft_strdup.c \
 				ft_putendl_fd.c ft_putnbr_fd.c ft_strchr.c ft_striteri.c \
@@ -53,6 +53,16 @@ OBJ_BONUS	= $(SRC_BONUS:.c=.o)
 RM			= rm -rf
 
 AR			= ar rcs 
+
+# -- Colors -- #
+BLACK = \033[0;30m
+RED = \033[0;31m
+GREEN = \033[0;32m
+YELLOW = \033[0;33m
+BLUE = \033[0;34m
+PURPLE = \033[0;35m
+CYAN = \033[0;36m
+WHITE = \033[0;37m
 
 # compile library
 $(NAME): $(OBJ)
@@ -73,7 +83,7 @@ all : $(NAME)
 
 # Removes objects
 clean :
-	@echo "Removing $(NAME) objects..."
+	@echo "$(RED)💥 Removing $(NAME)'s objects... 💥"
 	$(RM) $(OBJ) $(OBJ_BONUS)
 	@echo "$(NAME) objects successfully deleted."
 
@@ -81,10 +91,7 @@ clean :
 fclean : clean
 	@echo "Removing $(NAME) program..."
 	$(RM) $(NAME)
-	@echo "Executable(s) and archive(s) successfully deleted."
-
-# exe: $(NAME)
-#    valgrind --leak-check=full --show-leak-kinds=all ./a.out
+	@echo "🎉$(GREEN)Executable(s) and archive(s) successfully deleted.$(WHITE)🎉"
 
 # Removes objects and executable then remakes all
 re : fclean all

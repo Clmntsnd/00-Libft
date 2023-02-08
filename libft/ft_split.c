@@ -6,7 +6,7 @@
 /*   By: csenand <csenand@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 17:37:00 by csenand           #+#    #+#             */
-/*   Updated: 2022/11/10 14:31:26 by csenand          ###   ########.fr       */
+/*   Updated: 2023/01/20 10:01:13 by csenand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,25 +34,14 @@
 
 #include "libft.h"
 
-static int	ft_countwords(const char *str, char c);
+// static int	ft_countwords(const char *str, char c);
 
-static char	*word_dup(const char *str, int start, int finish);
+// static char	*word_dup(const char *str, int start, int finish);
 
-static void	*clear(char **words_array);
+// static void	*clear(char **words_array);
 
-static int	split_s(char **words_array, char const *s, char c);
+// static int	split_s(char **words_array, char const *s, char c);
 
-char	**ft_split(char const *s, char c)
-{
-	char	**words_array;
-
-	words_array = malloc((ft_countwords(s, c) + 1) * sizeof(char *));
-	if (!s || !words_array)
-		return (NULL);
-	if (!split_s(words_array, s, c))
-		return (clear(words_array));
-	return (words_array);
-}
 
 static int	ft_countwords(const char *str, char c)
 {
@@ -133,4 +122,16 @@ static int	split_s(char **words_array, char const *s, char c)
 	}
 	words_array[j] = 0;
 	return (1);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**words_array;
+
+	words_array = malloc((ft_countwords(s, c) + 1) * sizeof(char *));
+	if (!s || !words_array)
+		return (NULL);
+	if (!split_s(words_array, s, c))
+		return (clear(words_array));
+	return (words_array);
 }
