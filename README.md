@@ -1,7 +1,5 @@
 <p align="center"> 
    <img src="https://github.com/Clmntsnd/42-project-badges/blob/main/badges/libfte.png" alt="Libft Logo">
-
-  ---
 </p>
 
 ## Table of Contents 📜
