@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loulou <loulou@student.42.fr>              +#+  +:+       +#+        */
+/*   By: csenand <csenand@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 16:45:25 by csenand           #+#    #+#             */
-/*   Updated: 2023/03/14 17:23:33 by loulou           ###   ########.fr       */
+/*   Updated: 2023/07/05 11:33:53 by csenand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,20 +39,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s);
 	return (0);
 }
-
-/*
-int main(void)
-{
-	char *str = "This is MY string MATE!";
-	
-	char *last_M = ft_strrchr(str, ' ');
-	
-	printf("last_M: %s\n", last_M);
-	
-	char *last_Z = ft_strrchr(str, 'Z');
-
-	if (last_Z == NULL)
-		printf("No 'Z' found!\n");
-
-}
-*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loulou <loulou@student.42.fr>              +#+  +:+       +#+        */
+/*   By: csenand <csenand@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 13:20:50 by csenand           #+#    #+#             */
-/*   Updated: 2023/03/14 17:23:33 by loulou           ###   ########.fr       */
+/*   Updated: 2023/07/05 11:38:01 by csenand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,14 +53,3 @@ int	ft_atoi_base(const char *str, int str_base)
 	return (sign * res);
 }
 
-int	main(void)
-{
-	char	x[] = "42";
-	char	y[] = "1CDEF";
-	char	w[] = "\n\t -1234ab";
-
-	printf("ft_atoi_base\n");
-	printf("%d\n", ft_atoi_base(x, 10));
-	printf("%d\n", ft_atoi_base(y, 13));
-	printf("%d\n", ft_atoi_base(w, 16));
-}

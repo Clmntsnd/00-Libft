@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loulou <loulou@student.42.fr>              +#+  +:+       +#+        */
+/*   By: csenand <csenand@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 11:14:15 by csenand           #+#    #+#             */
-/*   Updated: 2023/03/14 17:23:33 by loulou           ###   ########.fr       */
+/*   Updated: 2023/07/05 11:37:36 by csenand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_bzero(void *s, size_t n)
 }
 
 /*
-				** VERSION LONGUE **
+				** LONG VERSION **
 				
 void	ft_bzero(void *s, size_t n)
 {
@@ -34,19 +34,3 @@ void	ft_bzero(void *s, size_t n)
 	}
 	s = ucs;
 }
-*/
-
-/*
-int main()
-{
-	char str[30] = "ABCD EFGH";  
-	 
-	printf("Before bzero => %s",str);  
-	 
-	ft_bzero(str, 3);  
-	 
-	printf("\nAfter bzero => %s\n",str);  
-	 
-	return 0;
-}
-*/

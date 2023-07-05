@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loulou <loulou@student.42.fr>              +#+  +:+       +#+        */
+/*   By: csenand <csenand@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 17:37:32 by csenand           #+#    #+#             */
-/*   Updated: 2023/03/14 17:23:33 by loulou           ###   ########.fr       */
+/*   Updated: 2023/07/05 11:36:08 by csenand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,14 +39,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-
-/*
-int main()
-{
-	char z[] = "Hello Mate";
-
-	char *first_c = ft_memchr(z, '\0', 11);
-	
-	printf("found: %s\n", first_c);
-}
-*/

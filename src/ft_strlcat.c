@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loulou <loulou@student.42.fr>              +#+  +:+       +#+        */
+/*   By: csenand <csenand@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 17:18:09 by csenand           #+#    #+#             */
-/*   Updated: 2023/03/14 17:23:33 by loulou           ###   ########.fr       */
+/*   Updated: 2023/07/05 11:34:54 by csenand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,20 +36,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	}
 	return (dst_len + ft_strlen(src));
 }
-
-/*
-int main()
-{
-	char y[] = "Hello"; 	// dst
-	char z[] = " there"; 	// src
-
-	printf("%lu\n", ft_strlcat(y, z, 0));
-
-
-	char s[] = "Hello";
-	char t[] = " there";
-
-	//printf("%lu\n", strlcat(s, t, 7));
-	
-}
-*/

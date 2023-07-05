@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loulou <loulou@student.42.fr>              +#+  +:+       +#+        */
+/*   By: csenand <csenand@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 13:20:50 by csenand           #+#    #+#             */
-/*   Updated: 2023/03/14 17:23:33 by loulou           ###   ########.fr       */
+/*   Updated: 2023/07/05 11:37:52 by csenand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,25 +38,3 @@ int	ft_atoi(const char *str)
 	}
 	return (sign * res);
 }
-
-/*
-int	main(void)
-{
-	char	z[10];
-	char	x[] = "---+--+1234ab567";
-	char	y[] = "1234ab567";
-	char	w[] = "\n\t -1--+--+1234ab567";
-
-	printf("ft_atoi\n");
-	printf("%d\n", ft_atoi(z));
-	printf("%d\n", ft_atoi(x));
-	printf("%d\n", ft_atoi(y));
-	printf("%d\n", ft_atoi(w));
-	printf("\n");
-	printf("atoi\n");
-	printf("%d\n", atoi(z));
-	printf("%d\n", atoi(x));
-	printf("%d\n", atoi(y));
-	printf("%d\n", atoi(w));
-}
-*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loulou <loulou@student.42.fr>              +#+  +:+       +#+        */
+/*   By: csenand <csenand@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 13:43:37 by csenand           #+#    #+#             */
-/*   Updated: 2023/03/14 17:23:33 by loulou           ###   ########.fr       */
+/*   Updated: 2023/07/05 11:35:55 by csenand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,25 +46,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-
-/*
-int main()
-{
-	char src[] = "copy this";
-	char dest[100];
-
-	ft_memmove(dest, src, 6);
-
-	printf("src : %s\n", src);
-	printf("dest : %s\n", dest);
-
-	char src1[] = "copy this";
-	char dest1[100];
-
-	memmove(src1 + 2, src1, 7);
-
-	printf("src1 : %s\n", src1);
-	printf("dest1 : %s\n", dest1);
-
-}
-*/

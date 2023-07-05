@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loulou <loulou@student.42.fr>              +#+  +:+       +#+        */
+/*   By: csenand <csenand@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 12:24:51 by csenand           #+#    #+#             */
-/*   Updated: 2023/03/14 17:23:33 by loulou           ###   ########.fr       */
+/*   Updated: 2023/07/05 11:34:32 by csenand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,20 +37,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
-/*
-#include <string.h>
-
-int main()
-{
-    char s1[100] = "Hey mate!";
-    char s2[] = "mate";
-
-    printf("%s\n", ft_strnstr(s1, s2, 8)); 
-
-    char s3[100] = "Hey mate!";
-    char s4[] = "mate";
-
-    printf("%s\n", strnstr(s3, s4, 8));
-}
-*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: loulou <loulou@student.42.fr>              +#+  +:+       +#+        */
+/*   By: csenand <csenand@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 11:36:05 by csenand           #+#    #+#             */
-/*   Updated: 2023/03/14 17:23:33 by loulou           ###   ########.fr       */
+/*   Updated: 2023/07/05 11:35:59 by csenand          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (c_dst);
 }
-
-/*
-int main()
-{
-	char src[] = "copy this";
-	char dest[100];
-
-	ft_memcpy(dest, src, strlen(src) + 1);
-
-	printf("src : %s\n", src);
-	printf("dest : %s\n", dest);	
-}
-*/
