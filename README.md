@@ -35,4 +35,4 @@ To use the Libft library in your C projects, follow these steps:
 2.  Change into the Libft directory:
 <pre><code>cd 00-Libft</code></pre>
 3.  Compile the library by running the provided Makefile:
-<pre><code>cd make</code></pre>
+<pre><code>make</code></pre>
